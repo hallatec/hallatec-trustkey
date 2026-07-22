@@ -1,0 +1,17 @@
+TrustKey
+Part of Hallatec Forge - Security & Infrastructure Tools
+
+Copyright (C) 2026 Hallatec Technology Solutions LLC
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version. See the LICENSE file for the full text.
+
+If you run a modified version of this software as a network service, the
+AGPL requires you to offer its complete corresponding source code to the
+users of that service.
+
+Canonical deployment: https://trustkey.hallatec.com/
+Source of record:     https://github.com/hallatec/hallatec-trustkey
+Suite:                https://forge.hallatec.com/

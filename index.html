@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+  SPDX-License-Identifier: AGPL-3.0-or-later
+  SPDX-FileCopyrightText: 2026 Hallatec Technology Solutions LLC
+
+  TrustKey - part of Hallatec Forge.
+  Canonical: https://trustkey.hallatec.com/
+  Source:    https://github.com/hallatec/hallatec-trustkey
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TrustKey - Identity &amp; Access Policy Builder · Hallatec Forge</title>
+<meta name="description" content="Turns a short business profile into an adoption-ready, role-by-role identity and access policy - MFA, admin risk, break-glass, conditional access. It builds a policy, never a credential." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/hallatec.css?v=3" />
+<link rel="canonical" href="https://trustkey.hallatec.com/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TrustKey - Identity & Access Policy Builder",
+  "url": "https://trustkey.hallatec.com/",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Web browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AED" },
+  "description": "Turns a short business profile into a role-by-role identity and access policy - MFA strength, admin risk, break-glass and conditional access.",
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "Hallatec Technology Solutions LLC", "url": "https://hallatec.com/" }
+}
+</script>
+<meta name="author" content="Hallatec Technology Solutions LLC" />
+<meta name="copyright" content="Copyright (C) 2026 Hallatec Technology Solutions LLC" />
+<link rel="license" href="https://www.gnu.org/licenses/agpl-3.0.html" />
+<link rel="code-repository" href="https://github.com/hallatec/hallatec-trustkey" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "TrustKey",
+  "codeRepository": "https://github.com/hallatec/hallatec-trustkey",
+  "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+  "runtimePlatform": "Web browser",
+  "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+  "copyrightYear": "2026",
+  "copyrightHolder": { "@type": "Organization", "name": "Hallatec Technology Solutions LLC", "url": "https://hallatec.com/" },
+  "author": { "@type": "Organization", "name": "Hallatec Technology Solutions LLC", "url": "https://hallatec.com/" },
+  "targetProduct": {
+    "@type": "SoftwareApplication",
+    "name": "TrustKey",
+    "url": "https://trustkey.hallatec.com/",
+    "applicationCategory": "SecurityApplication"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Hallatec Forge",
+    "url": "https://forge.hallatec.com/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../../index.html" aria-label="Hallatec Forge home"><span class="brand-logo" role="img" aria-label="Hallatec"></span><span class="brand-sub">Forge</span></a>
+    <span class="nav-spring"></span>
+    <a class="back-link" href="../../index.html">← All tools</a>
+  </div>
+</header>
+
+<section class="tool-hero">
+  <div class="wrap">
+    <div class="kbadge"><span class="pill"><span class="tag">Phase 2</span> · Class A · Static</span> <span class="chip sev-info">NIST · Protect</span></div>
+    <h1>Your identity policy, <span class="grad-text">role by role.</span></h1>
+    <p class="lead">Answer a short business profile and TrustKey builds an adoption-ready access policy - MFA strength per role, admin-account risk, break-glass, and vendor-neutral conditional access. Aligned to NIST SP 800-63B-4 guidance.</p>
+    <div class="alert" style="margin-top:16px;max-width:620px"><span class="ic">🔒</span><span>TrustKey generates a <strong>policy</strong>, never a credential. No passwords or secrets are created or stored.</span></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="card">
+    <h3 style="font-size:17px">Your business profile</h3>
+    <div class="grid g2" style="margin-top:14px;gap:14px">
+      <div class="field"><label>Team size</label><select class="input" id="size"><option>1-9</option><option selected>10-49</option><option>50-249</option><option>250+</option></select></div>
+      <div class="field"><label>Primary cloud platform</label><select class="input" id="platform"><option selected>Microsoft 365</option><option>Google Workspace</option><option>Mixed</option><option>Other</option></select></div>
+      <div class="field"><label>Admin accounts</label><input class="input" id="admins" type="number" min="0" value="4" /></div>
+      <div class="field"><label>Password manager adoption</label><select class="input" id="pwmgr"><option>None</option><option selected>Some staff</option><option>All staff</option></select></div>
+      <div class="field"><label>Device management (MDM)</label><select class="input" id="mdm"><option selected>None</option><option>Partial</option><option>Enforced</option></select></div>
+      <div class="field"><label>Remote access</label><select class="input" id="remote"><option>Office only</option><option selected>VPN</option><option>RDP exposed</option><option>ZTNA</option></select></div>
+    </div>
+    <div class="field"><label>MFA methods currently in use</label>
+      <div class="chips" style="margin-top:4px">
+        <button class="chip-toggle" data-mfa="passkey"><span class="dot"></span>Passkey / FIDO2</button>
+        <button class="chip-toggle" data-mfa="app" aria-pressed="true"><span class="dot"></span>Authenticator app / TOTP</button>
+        <button class="chip-toggle" data-mfa="sms" aria-pressed="true"><span class="dot"></span>SMS / email codes</button>
+        <button class="chip-toggle" data-mfa="none"><span class="dot"></span>None</button>
+      </div></div>
+    <div class="chips" style="margin-top:8px">
+      <button class="chip-toggle" data-flag="shared" aria-pressed="true"><span class="dot"></span>Shared accounts in use</button>
+      <button class="chip-toggle" data-flag="vendor" aria-pressed="true"><span class="dot"></span>External vendors have access</button>
+      <button class="chip-toggle" data-flag="breakglass"><span class="dot"></span>Break-glass account exists</button>
+    </div>
+    <div class="btn-row" style="margin-top:18px"><button class="btn btn-primary" id="buildBtn">Build my policy</button><button class="btn btn-ghost" id="exampleBtn">Load example</button></div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="hidden" style="margin-top:22px">
+    <div class="grid g2">
+      <div class="card card-glow" style="display:flex;gap:18px;align-items:center">
+        <div class="gauge sm" id="tkGauge" data-value="0"></div>
+        <div><p class="eyebrow">MFA maturity</p><h2 id="mfaHead" style="margin:6px 0;font-size:22px">-</h2><p id="mfaLine" style="font-size:13.5px">-</p></div>
+      </div>
+      <div class="card"><p class="eyebrow">Admin-account risk</p>
+        <h2 id="adminHead" style="margin:6px 0;font-size:22px">-</h2>
+        <p id="adminLine" style="font-size:14px">-</p>
+        <div id="adminChips" class="btn-row" style="margin-top:10px"></div>
+      </div>
+    </div>
+
+    <section class="card" style="margin-top:18px">
+      <h3 style="font-size:17px">MFA strength - aim up the ladder</h3>
+      <div class="ladder" id="ladder" style="margin-top:12px"></div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3 style="font-size:17px">MFA coverage by access type</h3>
+      <p class="muted" style="margin:2px 0 14px">Estimated share of each surface protected by strong MFA, derived from your profile. The tick marks the 80% target.</p>
+      <div class="meter-grid two" id="covMeters"></div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3 style="font-size:17px">Your role-based access policy</h3>
+      <p class="muted" style="margin-bottom:12px">The core artifact. One row per role - adopt as written, or hand to Hallatec to deploy.</p>
+      <div class="table-wrap">
+        <table class="matrix"><thead><tr><th>Role</th><th>MFA method</th><th>Access &amp; session</th><th>Password / passkey</th><th>Control</th></tr></thead>
+        <tbody id="policyRows"></tbody></table>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px" id="breakGlassCard">
+      <h3 style="font-size:17px">Break-glass - emergency access</h3>
+      <div id="breakGlass" style="margin-top:8px"></div>
+    </section>
+
+    <div class="grid g2" style="margin-top:18px">
+      <section class="card"><h3 style="font-size:16px">Passkey readiness</h3><p id="passkey" style="margin-top:8px;font-size:14px"></p></section>
+      <section class="card"><h3 style="font-size:16px">Conditional access</h3><p id="condaccess" style="margin-top:8px;font-size:14px"></p></section>
+    </div>
+
+    <div class="cta" style="margin-top:22px">
+      <p class="eyebrow">Next step</p>
+      <h3>Roll it out without breaking logins.</h3>
+      <p>A policy is only as good as its rollout. Hallatec deploys phishing-resistant MFA, dedicated admin accounts and conditional access - staged so no one gets locked out.</p>
+      <div class="btn-row"><button class="btn btn-primary" onclick="HTC.print()">⇩ Export policy</button><a class="btn btn-ghost" href="mailto:hello@hallatec.com?subject=TrustKey%20-%20identity%20%26%20MFA%20rollout">Book an identity rollout</a></div>
+      <div class="crosslinks"><a href="../aegis365/">Harden Microsoft 365 →</a><a href="../hscore/">Full posture (H-Score) →</a></div>
+    </div>
+    <p class="disclaimer" style="margin-top:16px">Vendor-neutral policy guidance based on your inputs; adapt to your platform's exact controls. Not a configuration export.</p>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap"><span class="brand-logo foot-logo" role="img" aria-label="Hallatec"></span><span>© 2026 Hallatec Technology Solutions LLC</span><span class="disclaimer">TrustKey · Identity &amp; Access Policy Builder</span></div></footer>
+
+<script src="assets/hallatec.js?v=3"></script>
+<script>
+const $=HTC.$, $$=HTC.$$;
+$$(".chip-toggle").forEach(c=> c.addEventListener("click", ()=> c.setAttribute("aria-pressed", c.getAttribute("aria-pressed")==="true"?"false":"true")));
+const mfaOn = m => $('[data-mfa="'+m+'"]').getAttribute("aria-pressed")==="true";
+const flagOn = f => $('[data-flag="'+f+'"]').getAttribute("aria-pressed")==="true";
+
+function calc(){
+  const admins=parseFloat($("#admins").value)||0;
+  const pwmgr=$("#pwmgr").value, mdm=$("#mdm").value, platform=$("#platform").value, remote=$("#remote").value;
+  let mfa=0;
+  if(mfaOn("passkey")) mfa+=42; if(mfaOn("app")) mfa+=26; if(mfaOn("sms")) mfa+=8; if(mfaOn("none")) mfa=0;
+  if(pwmgr==="All staff") mfa+=20; else if(pwmgr==="Some staff") mfa+=10;
+  if(mdm==="Enforced") mfa+=14; else if(mdm==="Partial") mfa+=6;
+  if(!flagOn("shared")) mfa+=6;
+  mfa=Math.min(100,mfa);
+  // admin risk
+  let risk=0; const reasons=[];
+  if(admins>3){ risk+=2; reasons.push(admins+" admin accounts"); }
+  if(flagOn("shared")){ risk+=2; reasons.push("shared accounts"); }
+  if(mfaOn("sms") && !mfaOn("passkey")){ risk+=1; reasons.push("SMS-based MFA"); }
+  if(!flagOn("breakglass")){ risk+=1; reasons.push("no break-glass account"); }
+  if(remote==="RDP exposed"){ risk+=2; reasons.push("RDP exposed"); }
+  const level = risk>=5?"High":risk>=3?"Medium":"Low";
+  // ---- MFA coverage by access type (honest, derived from the same inputs that feed the MFA score) ----
+  // methodStrength: best available factor in use, 0-100 (passkey > app > sms > none)
+  const methodStrength = mfaOn("passkey")?100 : mfaOn("app")?70 : mfaOn("sms")?35 : 0;
+  const shared = flagOn("shared");
+  // Admin: strongest bar. Method strength, minus shared-account attribution loss, minus spread across many admins.
+  let adminCov = methodStrength;
+  if(shared) adminCov -= 25;                 // shared logins can't be individually enforced
+  if(admins>3) adminCov -= 10;               // harder to hold coverage across many admin accounts
+  else if(admins>6) adminCov -= 18;
+  adminCov = Math.max(0, Math.min(100, Math.round(adminCov)));
+  // Remote access: method strength gated by how remote access is delivered, lifted by managed devices.
+  const remoteBase = { "ZTNA":100, "VPN":75, "Office only":90, "RDP exposed":30 }[remote] ?? 70;
+  let remoteCov = Math.round(methodStrength*0.55 + remoteBase*0.45);
+  if(mdm==="Enforced") remoteCov += 8; else if(mdm==="Partial") remoteCov += 4;
+  remoteCov = Math.max(0, Math.min(100, remoteCov));
+  // Email / M365: the login surface. Method strength plus credential hygiene, minus shared mailboxes.
+  let emailCov = Math.round(methodStrength*0.8);
+  if(pwmgr==="All staff") emailCov += 15; else if(pwmgr==="Some staff") emailCov += 7;
+  if(shared) emailCov -= 12;
+  emailCov = Math.max(0, Math.min(100, emailCov));
+  const coverage = { admin:adminCov, remote:remoteCov, email:emailCov };
+  return {admins,mfa,level,reasons,platform,remote,breakglass:flagOn("breakglass"),vendor:flagOn("vendor"),passkeyUsed:mfaOn("passkey"),pwmgr,mdm,coverage};
+}
+function render(){
+  const r=calc();
+  $("#results").classList.remove("hidden");
+  const g=$("#tkGauge"); g.dataset.value=r.mfa;
+  HTC.gauge(g, r.mfa, { band: r.mfa>=75?"Strong":r.mfa>=50?"Developing":"Weak", label:"MFA maturity" });
+  $("#mfaHead").textContent = (r.mfa>=75?"Strong":r.mfa>=50?"Developing":"Weak") + " · " + r.mfa;
+  $("#mfaLine").textContent = r.passkeyUsed? "Phishing-resistant methods are in play - extend them to every privileged role." : "You rely on phishable factors. Moving admins to passkeys is the biggest single lift.";
+  const rc = { High:"is-bad", Medium:"is-warn", Low:"is-ok" }[r.level];
+  $("#adminHead").textContent = "Admin risk: " + r.level;
+  $("#adminLine").textContent = r.reasons.length? ("Driven by " + r.reasons.join(", ") + ".") : "Admin accounts are well contained.";
+  $("#adminChips").innerHTML = '<span class="chip '+(r.level==="High"?"sev-fail":r.level==="Medium"?"sev-warn":"sev-pass")+'"><span class="ic">'+(r.level==="Low"?"✓":"▲")+'</span> '+r.level+' risk</span><span class="pill">'+r.admins+' admin accounts</span>';
+  // ladder
+  const L=[["Passkey / FIDO2 security key","Phishing-resistant - the target for every admin","best",r.passkeyUsed],
+    ["Authenticator app (TOTP / push)","Good for general staff; enable number-matching","",mfaOn("app")],
+    ["SMS / email codes","Avoid where possible - SIM-swap &amp; phishable","avoid",mfaOn("sms")],
+    ["No MFA","Unacceptable for any account with data access","avoid",mfaOn("none")]];
+  $("#ladder").innerHTML = L.map((x,i)=>'<div class="rung '+x[2]+'"><span class="chip '+(x[2]==="best"?"sev-pass":x[2]==="avoid"?"sev-fail":"sev-warn")+'">'+(i+1)+'</span><div><b>'+x[0]+'</b><div class="muted" style="font-size:12px">'+x[1]+'</div></div>'+(x[3]?'<span class="rank">in use</span>':'')+'</div>').join("");
+  // MFA coverage by access type - three track-meters, target tick at the 80% goal
+  const COV=[["admin","Admin accounts"],["remote","Remote access"],["email","Email / M365"]];
+  const cm=$("#covMeters");
+  cm.innerHTML = COV.map(c=>'<div class="track-meter" id="cov-'+c[0]+'"></div>').join("");
+  COV.forEach(c=> HTC.trackMeter($("#cov-"+c[0]), r.coverage[c[0]], { label:c[1], max:100, unit:"%", target:80 }));
+  // policy table
+  const cond = r.platform==="Google Workspace"?"Context-Aware Access":"Conditional Access";
+  const ROLES = [
+    ["Owner / Director","Passkey (FIDO2)","Standard access · 8h session · MFA on new device","Passphrase + manager; passkey primary","CIS 6.5"],
+    ["Finance","Passkey (FIDO2)","Payment approval out-of-band · 8h session","Passphrase + manager; no reuse","CIS 6.3"],
+    ["HR","Authenticator app","Access to PII limited &amp; logged","Passphrase + manager","NIST 800-63B"],
+    ["IT Admin","Passkey (FIDO2)","Dedicated admin account · 1h session · PAW","Unique per-admin; passkey only","CIS 5.4 / 6.8"],
+    ["General user","Authenticator app","Standard access · least privilege","Passphrase + manager","CIS 6.3"],
+    ["Vendor / contractor","Passkey or app + time-boxed","Just-in-time · expires · scoped &amp; logged","No shared logins; per-person","CIS 6.7"],
+    ["Break-glass","Passkey (FIDO2), offline backup","2 accounts · excluded from "+cond+" · monitored","Long random; sealed &amp; split","CIS 6.8"]
+  ];
+  $("#policyRows").innerHTML = ROLES.map(row=>'<tr><td class="rolecell">'+row[0]+'</td><td>'+row[1]+'</td><td>'+row[2]+'</td><td>'+row[3]+'</td><td><span class="control-tag"><b>'+row[4]+'</b></span></td></tr>').join("");
+  // break-glass
+  $("#breakGlass").innerHTML = r.breakglass
+    ? '<div class="alert"><span class="ic">✓</span><span>You have a break-glass account. Confirm it\'s excluded from '+cond+', uses a passkey, is monitored for every use, and its recovery secret is sealed and split between two people.</span></div>'
+    : '<div class="alert warn"><span class="ic">▲</span><span><b>Add a break-glass account.</b> Create two emergency-access accounts with passkeys, exclude them from '+cond+' (so a policy error can\'t lock you out), and alert on every sign-in. This is the account that saves you when MFA or SSO fails.</span></div>';
+  // passkey readiness
+  $("#passkey").innerHTML = r.passkeyUsed? "You already use passkeys - extend them to Owner, Finance and IT Admin first, then all staff. "+ (r.mdm==="Enforced"?"Your MDM makes platform passkeys easy to enforce.":"Consider MDM to streamline enrolment.")
+    : "You're not using passkeys yet. On "+r.platform+" this is the highest-impact move: start with admins, use security keys or platform passkeys, keep the authenticator app as fallback.";
+  $("#condaccess").innerHTML = r.remote==="RDP exposed"
+    ? "<b style='color:var(--bad)'>Close exposed RDP.</b> Put remote access behind "+cond+" / ZTNA, require compliant devices, and block legacy authentication."
+    : "Enforce "+cond+": require MFA everywhere, block legacy auth, require compliant/managed devices for admin roles, and restrict sign-in by risk and location.";
+  HTC.reveal($("#results"));
+}
+$("#buildBtn").addEventListener("click", render);
+$("#exampleBtn").addEventListener("click", ()=>{ render(); });
+</script>
+</body>
+</html>
