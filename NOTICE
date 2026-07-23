@@ -15,3 +15,8 @@ users of that service.
 Canonical deployment: https://trustkey.hallatec.com/
 Source of record:     https://github.com/hallatec/hallatec-trustkey
 Suite:                https://forge.hallatec.com/
+
+ATTRIBUTION REQUIRED
+This software carries an additional term under AGPL-3.0 section 7(b): any copy,
+modified version or network-hosted deployment must preserve and display the
+copyright notice in its user-visible interface. See LICENSE-ADDITIONAL-TERMS.

@@ -1,0 +1,67 @@
+ADDITIONAL TERMS
+under Section 7 of the GNU Affero General Public License, version 3
+
+This software is licensed under the GNU AGPL-3.0-or-later, the full text of
+which is in the file LICENSE. In addition, and as expressly permitted by
+Section 7(b) of that licence, the following term applies to this software and
+to every copy, modified version and derivative work of it.
+
+-------------------------------------------------------------------------------
+ATTRIBUTION REQUIREMENT (AGPL-3.0 Section 7(b))
+-------------------------------------------------------------------------------
+
+Section 7(b) of the AGPL permits a licensor to require "preservation of
+specified reasonable legal notices or author attributions in that material or
+in the Appropriate Legal Notices displayed by works containing it."
+
+Accordingly: if you copy, modify, distribute, host, or otherwise make this
+software available to users - including over a network - you MUST preserve and
+display the following Appropriate Legal Notice in the user-visible interface:
+
+    (c) 2026 Hallatec Technology Solutions LLC
+    Originally developed as part of Hallatec Forge
+    https://forge.hallatec.com/
+
+Conditions on that notice:
+
+  1. It must appear in the interface a user actually sees while using the
+     software - not only in source comments, a licence file, or documentation.
+     In the software as supplied, this notice is the site footer, marked in the
+     markup with the attribute data-legal-notice="required".
+
+  2. It must remain legible and reasonably prominent. It may be restyled to
+     suit your design, but must not be hidden, obscured, made transparent,
+     reduced to an illegible size, or moved behind an interaction that a
+     typical user would not perform.
+
+  3. It must remain accurate. You may not alter the company name, the year, or
+     the forge.hallatec.com reference.
+
+  4. You MAY add your own copyright, branding and attribution alongside it.
+     You MAY NOT replace this notice with your own, or present the software as
+     solely your own work.
+
+  5. If you distribute the software as source, this file and the LICENSE and
+     NOTICE files must be included unmodified.
+
+-------------------------------------------------------------------------------
+WHAT THIS DOES AND DOES NOT RESTRICT
+-------------------------------------------------------------------------------
+
+This is an attribution term, not a usage restriction. The software remains
+free software and free to use. You may use it for any purpose, including
+commercially; study it; modify it; self-host it; and redistribute it.
+
+Under AGPL Section 7, an attribution requirement of this kind is a permitted
+additional term and is NOT a "further restriction". It therefore may not be
+removed by a downstream recipient.
+
+Nothing here grants any licence to the "Hallatec" name, the Hallatec logo and
+logo marks, or the Hallatec wordmark and trade dress, which are trademarks of
+Hallatec Technology Solutions LLC. The attribution notice above must be reproduced as text; it does not
+entitle you to use Hallatec branding for any other purpose, nor to imply that
+Hallatec Technology Solutions LLC endorses your derivative.
+
+-------------------------------------------------------------------------------
+
+Copyright (C) 2026 Hallatec Technology Solutions LLC

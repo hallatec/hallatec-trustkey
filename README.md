@@ -68,9 +68,20 @@ changes should be propagated to the siblings above.
 
 ## Licence
 
-[GNU AGPL-3.0-or-later](LICENSE). You may use, modify and self-host this tool
-freely. If you run a modified version **as a network service**, the AGPL
-requires you to publish your modified source to that service's users. See
-[NOTICE](NOTICE).
+[GNU AGPL-3.0-or-later](LICENSE), with an attribution term under section 7(b)
+- see [LICENSE-ADDITIONAL-TERMS](LICENSE-ADDITIONAL-TERMS).
+
+**Free to use.** Use it for any purpose including commercially, study it,
+modify it, self-host it, redistribute it.
+
+**Two conditions.** If you run a modified version **as a network service**, the
+AGPL requires you to publish your modified source to that service's users. And
+whether modified or not, you must **keep the copyright notice visible in the
+interface** - it is the site footer, marked `data-legal-notice="required"`. You
+may restyle it and add your own branding beside it; you may not remove it,
+hide it, or replace it with your own.
+
+The Hallatec name, logo marks and wordmark are trademarks and are not licensed
+by the above. See [NOTICE](NOTICE).
 
 Copyright (C) 2026 Hallatec Technology Solutions LLC

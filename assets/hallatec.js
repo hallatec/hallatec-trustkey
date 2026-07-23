@@ -1,6 +1,7 @@
 /*
  * SPDX-License-Identifier: AGPL-3.0-or-later
  * SPDX-FileCopyrightText: 2026 Hallatec Technology Solutions LLC
+ * Additional terms: attribution required - see LICENSE-ADDITIONAL-TERMS
  *
  * TrustKey - Hallatec Forge shared component library
  * Canonical: https://trustkey.hallatec.com/
