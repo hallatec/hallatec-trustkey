@@ -14,10 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TrustKey - Identity &amp; Access Policy Builder · Hallatec Forge</title>
 <meta name="description" content="Turns a short business profile into an adoption-ready, role-by-role identity and access policy - MFA, admin risk, break-glass, conditional access. It builds a policy, never a credential." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/hallatec.css?v=3" />
+<link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="assets/hallatec.css?v=4" />
 <link rel="canonical" href="https://trustkey.hallatec.com/" />
 <script type="application/ld+json">
 {
@@ -165,7 +164,7 @@
 
 <footer class="foot" data-legal-notice="required"><div class="wrap"><span class="brand-logo foot-logo" role="img" aria-label="Hallatec"></span><span>© 2026 Hallatec Technology Solutions LLC</span><span class="disclaimer">TrustKey · Identity &amp; Access Policy Builder</span></div></footer>
 
-<script src="assets/hallatec.js?v=3"></script>
+<script src="assets/hallatec.js?v=4"></script>
 <script>
 const $=HTC.$, $$=HTC.$$;
 $$(".chip-toggle").forEach(c=> c.addEventListener("click", ()=> c.setAttribute("aria-pressed", c.getAttribute("aria-pressed")==="true"?"false":"true")));

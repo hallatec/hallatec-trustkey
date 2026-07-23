@@ -7,6 +7,14 @@
  * Canonical: https://trustkey.hallatec.com/
  * Source:    https://github.com/hallatec/hallatec-trustkey
  */
+
+/* Self-hosted Poppins (SIL OFL 1.1, latin subset) - see fonts/OFL.txt.
+   Vendored so the suite has no external font dependency and honours
+   its own no-third-party-calls claim. */
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/poppins-400.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/poppins-500.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/poppins-600.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/poppins-700.woff2') format('woff2');}
 /* =====================================================================
    HALLATEC CYBER TOOLS - SHARED DESIGN SYSTEM
    The single source of truth for every tool in the suite.
@@ -23,16 +31,11 @@
   --h-grad:    linear-gradient(135deg, #f26530 0%, #ef495d 100%);
   --h-grad-soft: linear-gradient(135deg, rgba(242,101,48,.16), rgba(239,73,93,.16));
 
-  /* ----- Official logo assets (R2-hosted) -----
-     ONE-TIME SETUP: after enabling the bucket's Public Development URL in the
-     Cloudflare dashboard, find-and-replace the token  pub-c713f72e242a4b9084a1a7ceec1b0dde.r2.dev  below with
-     your r2.dev URL (no trailing slash), e.g. https://pub-abc123.r2.dev
-     (CSS custom properties can't be concatenated inside url(), so the base is a
-     literal find-replace anchor, repeated on each line.) */
-  --logo-full-color: url("https://pub-c713f72e242a4b9084a1a7ceec1b0dde.r2.dev/hallatec-full-color.png");
-  --logo-full-white: url("https://pub-c713f72e242a4b9084a1a7ceec1b0dde.r2.dev/hallatec-full-white.png");
-  --logo-mark-color: url("https://pub-c713f72e242a4b9084a1a7ceec1b0dde.r2.dev/hallatec-mark-color.png");
-  --logo-mark-white: url("https://pub-c713f72e242a4b9084a1a7ceec1b0dde.r2.dev/hallatec-mark-white.png");
+  /* ----- Official logo assets (self-hosted, see assets/logos/) ----- */
+  --logo-full-color: url("logos/hallatec-full-color.png");
+  --logo-full-white: url("logos/hallatec-full-white.png");
+  --logo-mark-color: url("logos/hallatec-mark-color.png");
+  --logo-mark-white: url("logos/hallatec-mark-white.png");
 
   /* Surfaces (near-black premium dark) */
   --bg:        #0e0f13;
